@@ -4,7 +4,8 @@
   "description": "Simple Video calling application using WebRTC",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js"
+    "test": "node server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

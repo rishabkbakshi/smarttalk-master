@@ -12,7 +12,9 @@ easyrtc.setOption("logLevel", "debug");
 const app = express();
 const PORT = process.env.PORT || 4009;
 
+app.use(cors());
 app.use(express.static('src'));
+
 const staticServer = http.createServer(app);
 const socketServer = socketIo.listen(staticServer,{"logLevel": 1});
 
