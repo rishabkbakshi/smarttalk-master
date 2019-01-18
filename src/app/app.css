@@ -1,0 +1,33 @@
+#demoContainer {
+    position:relative;
+    height: 100%;
+    width: 100%;
+}
+.callButton {
+    float:left;
+}
+#connectControls {
+    float:left;
+}
+#otherClients {
+    height:50px;
+}
+
+#videoBox{
+    position: relative;
+}
+
+#localVideo {
+    position:absolute;
+    left: 10px;
+    top:10px;
+    z-index: 2;
+    opacity: 0.8;
+    height:240px;
+    width:320px;
+}
+
+#remoteVideo {
+    height: 100%;
+    width: 100%;
+}

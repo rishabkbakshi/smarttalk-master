@@ -1,17 +1,19 @@
 
 
+const easyRtc = easyrtc;
+
 const SmartTalk = angular.module('SmartTalk', [
-    "ngRoute"
+    "ui.router"
 ]);
 
-SmartTalk.config(($routeProvider) => {
-    $routeProvider
-        .when("/", {
-            templateUrl: "app/views/home.html",
-            controller: "HomeCtrl"
-        })
-        .when("/session/:id", {
+SmartTalk.config(($urlRouterProvider, $stateProvider) => {
+    $stateProvider
+        .state({
+            name: "session",
+            url: "/session",
             templateUrl: "app/views/session.html",
             controller: "SessionCtrl"
         })
+        
+        $urlRouterProvider.otherwise('/session');
 })

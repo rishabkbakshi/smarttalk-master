@@ -1,0 +1,17 @@
+<h1>EasyRTC Demo: Video+Audio HD 720p</h1>
+<div id="demoContainer" class="flex flex-column justify-center align-items">
+    <div id="connectControls">
+        <div id="iam">Not yet connected...</div>
+        <br />
+        <strong>Connected users:</strong>
+        <div id="otherClients"></div>
+    </div>
+    <div id="videoBox" class="pa2 shadow-5">
+        <div id="remoteVideoContainer">
+            <video id="remoteVideo" height="100%" width="100%" autoplay="autoplay" playsinline="playsinline"></video>
+        </div>
+        <div id="localVideoContainer">
+            <video id="localVideo" height="100%" width="100%" autoplay="autoplay" playsinline="playsinline" class="easyrtcMirror" muted="true" volume="0"></video>
+        </div>
+    </div>
+</div>
